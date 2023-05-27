@@ -6,8 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:scripts": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:scripts:fix": "pnpm run lint:scripts --fix",
+    "lint:styles": "stylelint ./src/**/*.css",
+    "lint": "pnpm run lint:scripts:fix & pnpm run lint:styles",
+    "format:scripts": "prettier src --check",
+    "format:scripts:fix": "pnpm run format:scripts --write",
+    "format:styles": "pnpm run lint:styles --fix",
+    "format": "pnpm run format:scripts:fix & pnpm run format:styles"
   },
   "dependencies": {
     "react": "^18.2.0",
