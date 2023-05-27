@@ -23,6 +23,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "prettier": "^2.8.8",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-order": "^6.0.3",
     "vite": "^4.3.2"
   }
 }
