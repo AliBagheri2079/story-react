@@ -1,13 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
+    <!--* Set character encoding for the document -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+
+    <!--* Viewport for responsive web design -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!--* Standard favicon -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/storyfire.svg" /> -->
+
+    <!--* Recommended favicon format -->
+    <link type="image/png" sizes="32x32" rel="icon" href="/storyfire-web.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/storyfire-android.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="/storyfire-ios.png"
+    />
+    <link color="#26E07F" rel="mask-icon" href="/storyfire.svg" />
+    <meta
+      name="msapplication-square310x310logo"
+      content="/storyfire-windows.png"
+    />
+    <meta name="msapplication-TileColor" content="#C0FFEE" />
+    <meta name="application-name" content="Story Project" />
+
+    <!--* To run the web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!--* Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!--* Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!--* Facebook Open Graph -->
+    <!--TODO: COMPLETE FROM 'WEB CODE TOOL' AFTER DEPLOY TO NETLIFY OR VERCELL  -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/page.html" />
+    <meta property="og:title" content="Content Title" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" />
+    <meta property="og:site_name" content="Site Name" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!--* Twitter Card -->
+    <!--TODO: COMPLETE FROM 'WEB CODE TOOL' AFTER DEPLOY TO NETLIFY OR VERCELL  -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@site_account" />
+    <meta name="twitter:creator" content="@individual_account" />
+    <meta name="twitter:url" content="https://example.com/page.html" />
+    <meta name="twitter:title" content="Content Title" />
+    <meta
+      name="twitter:description"
+      content="Content description less than 200 characters"
+    />
+    <meta name="twitter:image" content="https://example.com/image.jpg" />
+
+    <!--* Support Dark and Light theme -->
+    <meta name="color-scheme" content="dark light" />
+
+    <!--* Author Name -->
+    <meta name="author" content="Ali Bagheri" />
+
+    <!--* Meta Description -->
+    <meta
+      name="description"
+      content="Story Project a Simple Project that shows many animation and other tricks..."
+    />
+
+    <!--* Document Title -->
+    <title>Story Project</title>
   </head>
   <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
