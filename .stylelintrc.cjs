@@ -8,6 +8,7 @@ module.exports = {
     'at-rule-no-unknown': null,
     'max-nesting-depth': 2,
     'selector-max-id': 1,
+    'selector-class-pattern': null,
   },
   overrides: [],
   reportNeedlessDisables: [],
