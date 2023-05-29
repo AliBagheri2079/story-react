@@ -1,9 +1,5 @@
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-
-  h2 {
-    @apply text-xl;
+  body {
+    @apply bg-slate-950 text-slate-50;
   }
 }
