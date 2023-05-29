@@ -31,5 +31,6 @@ module.exports = {
       },
     ],
     'import/no-unresolved': [1, { commonjs: true, amd: true }],
+    'tailwindcss/no-custom-classname': 0,
   },
 };
