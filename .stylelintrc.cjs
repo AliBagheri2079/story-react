@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['stylelint-config-standard'],
+  extends: ['stylelint-config-standard', 'stylelint-config-tailwindcss'],
   plugins: ['stylelint-order'],
   rules: {
     'order/order': ['custom-properties', 'declarations'],
