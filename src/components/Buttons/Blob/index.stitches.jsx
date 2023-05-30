@@ -2,7 +2,7 @@ import { keyframes, styled } from '@/lib/stitches.config.js';
 
 const borderTransform = keyframes({
   '0%, 100%': {
-    borderRadius: '42% 56% 72% 28% / 42% 42% 56% 48%',
+    borderRadius: '35% 65% 37% 63% / 35% 72% 28% 65%',
   },
   '33%': {
     borderRadius: '72% 28% 48% 48% / 28% 28% 72% 72%',
@@ -38,7 +38,7 @@ export const Button = styled('button', {
     overflow: 'hidden',
     backgroundColor: '$red2',
     borderRadius: '60% 40% 50% 50% / 45% 35% 65% 55%',
-    animation: `${borderTransform} 4000ms linear infinite`,
+    animation: `${borderTransform} 8s linear infinite`,
   },
 
   '&::after': {
