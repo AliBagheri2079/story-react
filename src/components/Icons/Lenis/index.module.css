@@ -1,5 +1,5 @@
 .LenisIconPath {
-  @apply fill-none stroke-red-300;
+  @apply fill-none stroke-red-200;
 
   stroke-width: 0.1rem;
   stroke-dasharray: 4800;
@@ -15,6 +15,6 @@
   }
 
   to {
-    @apply fill-red-300 stroke-transparent;
+    @apply fill-red-200 stroke-transparent;
   }
 }
