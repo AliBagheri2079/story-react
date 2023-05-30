@@ -21,8 +21,8 @@ export const Text = styled('span', {
 export const Button = styled('button', {
   position: 'relative',
   display: 'inline-block',
-  width: 'calc(2.6rem + 10vw)',
-  height: 'calc(2.5rem + 10vh)',
+  width: 'calc(2.5rem + 10vw)',
+  aspectRatio: '3 / 2',
 
   '&::before, &::after': {
     content: '',
@@ -37,7 +37,6 @@ export const Button = styled('button', {
 
     overflow: 'hidden',
     backgroundColor: '$red2',
-    borderRadius: '60% 40% 50% 50% / 45% 35% 65% 55%',
     animation: `${borderTransform} 8s linear infinite`,
   },
 
@@ -56,6 +55,7 @@ export const Button = styled('button', {
     '&::before': {
       backgroundColor: '$red4',
       animationIterationCount: 0,
+      borderRadius: '60% 40% 50% 50% / 45% 35% 65% 55%',
     },
 
     [`& ${Text}, &::after`]: {
