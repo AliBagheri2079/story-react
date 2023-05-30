@@ -4,8 +4,11 @@ import { LenisIcon } from '@/components/Icons';
 
 const Content = styled('header', {
   width: '100%',
-  // dvh
   height: '100vh',
+
+  '@supports (height: 100svh)': {
+    height: '100svh',
+  },
 });
 
 const Container = styled('div', {
