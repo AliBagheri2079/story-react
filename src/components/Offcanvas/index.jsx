@@ -1,3 +1,4 @@
+import Style from './index.module.css';
 import { NavLink, WaveItem } from './index.stitches';
 import { BlobButton } from '@/components/Buttons';
 
@@ -18,7 +19,7 @@ const Offcanvas = () => {
               backgroundColor: '$amber6',
             },
             '&:after': {
-              backgroundColor: '$slate12',
+              backgroundColor: '$blackA12',
             },
           }}
           style={{
@@ -54,8 +55,11 @@ const Offcanvas = () => {
             '--wave-delay': '700ms',
           }}
         >
-          <ul className='ms-20 flex h-full -translate-y-40 flex-col items-start justify-evenly'>
-            <li className='font-moresby text-7xl'>
+          {/* -translate-y-40 */}
+          <ul
+            className={`ms-20 flex h-full flex-col items-start justify-evenly ${Style.List}`}
+          >
+            <li className='font-moresby text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
               <NavLink
                 href='#item'
                 className='inline-flex overflow-hidden text-inherit'
@@ -63,100 +67,16 @@ const Offcanvas = () => {
                 {'hello world'.split('').map((value, index) => (
                   <span
                     key={value}
-                    className='letter relative duration-500 first:capitalize'
+                    className='letter letter--reveal relative duration-500 first:capitalize'
                   >
                     <span
-                      className='letter__out inline-flex duration-500'
+                      className='letter--reveal__out inline-flex duration-500'
                       style={{ transitionDelay: `${index * 25}ms` }}
                     >
                       {value}
                     </span>
                     <span
-                      className='letter__in absolute left-0 text-slate-950 duration-500'
-                      style={{ transitionDelay: `${index * 25}ms` }}
-                    >
-                      {value}
-                    </span>
-                  </span>
-                ))}
-              </NavLink>{' '}
-              <sup className='duration-500'>5</sup>
-            </li>
-
-            <li className='font-moresby text-7xl'>
-              <NavLink
-                href='#item'
-                className='inline-flex overflow-hidden text-inherit'
-              >
-                {'hello world'.split('').map((value, index) => (
-                  <span
-                    key={value}
-                    className='letter relative duration-500 first:capitalize'
-                  >
-                    <span
-                      className='letter__out inline-flex duration-500'
-                      style={{ transitionDelay: `${index * 25}ms` }}
-                    >
-                      {value}
-                    </span>
-                    <span
-                      className='letter__in absolute left-0 text-slate-950 duration-500'
-                      style={{ transitionDelay: `${index * 25}ms` }}
-                    >
-                      {value}
-                    </span>
-                  </span>
-                ))}
-              </NavLink>{' '}
-              <sup className='duration-500'>5</sup>
-            </li>
-
-            <li className='font-moresby text-7xl'>
-              <NavLink
-                href='#item'
-                className='inline-flex overflow-hidden text-inherit'
-              >
-                {'hello world'.split('').map((value, index) => (
-                  <span
-                    key={value}
-                    className='letter relative duration-500 first:capitalize'
-                  >
-                    <span
-                      className='letter__out inline-flex duration-500'
-                      style={{ transitionDelay: `${index * 25}ms` }}
-                    >
-                      {value}
-                    </span>
-                    <span
-                      className='letter__in absolute left-0 text-slate-950 duration-500'
-                      style={{ transitionDelay: `${index * 25}ms` }}
-                    >
-                      {value}
-                    </span>
-                  </span>
-                ))}
-              </NavLink>{' '}
-              <sup className='duration-500'>5</sup>
-            </li>
-
-            <li className='font-moresby text-7xl'>
-              <NavLink
-                href='#item'
-                className='inline-flex overflow-hidden text-inherit'
-              >
-                {'hello world'.split('').map((value, index) => (
-                  <span
-                    key={value}
-                    className='letter relative duration-500 first:capitalize'
-                  >
-                    <span
-                      className='letter__out inline-flex duration-500'
-                      style={{ transitionDelay: `${index * 25}ms` }}
-                    >
-                      {value}
-                    </span>
-                    <span
-                      className='letter__in absolute left-0 text-slate-950 duration-500'
+                      className='letter--reveal__in absolute left-0 text-black duration-500'
                       style={{ transitionDelay: `${index * 25}ms` }}
                     >
                       {value}

@@ -48,14 +48,14 @@ export const WaveItem = styled('div', {
 });
 
 export const NavLink = styled('a', {
-  '& .letter': {
+  '& .letter--reveal': {
     '&__in': {
       transform: 'translateY(100%)',
     },
   },
 
   '&:hover': {
-    '& .letter': {
+    '& .letter--reveal': {
       '&__out': {
         transform: 'translateY(-100%)',
       },
