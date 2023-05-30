@@ -2,7 +2,12 @@ import Style from './index.module.css';
 
 const LenisIcon = () => {
   return (
-    <svg fill='none' viewBox='0 0 1360 336' xmlns='http://www.w3.org/2000/svg'>
+    <svg
+      className='max-w-md'
+      fill='none'
+      viewBox='0 0 1360 336'
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <title>Lenis Svg Icon</title>
       <g>
         <path
