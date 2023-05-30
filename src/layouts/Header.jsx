@@ -17,9 +17,10 @@ const Container = styled('div', {
   gap: '1rem',
 
   gridTemplateAreas: `
-		"brand . ."
-		"social-media header-paragraph infinite-slide"
-		"svg-animate threejs animation-btn"
+		"brand brand . . ."
+		"social-media header-paragraph header-paragraph header-paragraph infinite-slide"
+		"social-media header-paragraph header-paragraph header-paragraph infinite-slide"
+		"svg-animate threejs threejs threejs animation-btn"
 	`,
 });
 
@@ -57,8 +58,8 @@ const Header = () => {
       <Offcanvas />
 
       <Content>
-        <Container className='grid h-full grid-cols-3 grid-rows-3 px-4'>
-          <Box area='Brand' className='mt-4'>
+        <Container className='grid h-full grid-cols-5 grid-rows-4 px-4'>
+          <Box area='Brand' className='mt-6'>
             <LenisIcon />
           </Box>
 
