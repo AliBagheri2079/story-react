@@ -16,6 +16,7 @@
     background-color: theme('colors.black');
     color: theme('colors.white');
     font-family: var(--monument-regular-font);
+    color-scheme: dark;
   }
 
   ::selection {
