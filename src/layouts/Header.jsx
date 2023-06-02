@@ -1,6 +1,7 @@
 import { styled } from '@stitches/react';
 import Offcanvas from '@/components/Offcanvas';
 import { LenisIcon } from '@/components/Icons';
+import HeaderTitle from '@/components/HeaderTitle';
 
 const Content = styled('header', {
   width: '100%',
@@ -60,6 +61,7 @@ const Header = () => {
       <Content>
         <Container className='grid h-full grid-cols-5 grid-rows-4 px-4'>
           <Box area='Brand' className='mt-6'>
+            {/* create brand component and put lenis to inside it */}
             <LenisIcon />
           </Box>
 
@@ -67,8 +69,8 @@ const Header = () => {
             SocialMedia:
           </Box>
 
-          <Box area='HeaderParagraph' className='text-4xl'>
-            <mark>HeaderParagraph</mark>
+          <Box area='HeaderParagraph'>
+            <HeaderTitle />
           </Box>
 
           <Box area='InfiniteSlide'>InfiniteSlide</Box>
