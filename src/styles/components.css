@@ -1,5 +1,15 @@
 @layer components {
-  .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  .vertical-rl {
+    writing-mode: vertical-rl;
+
+    &--bottom {
+      --tw-rotate: 180deg;
+
+      rotate: var(--tw-rotate);
+
+      @supports not (rotate: var(--tw)) {
+        @apply rotate-180;
+      }
+    }
   }
 }
