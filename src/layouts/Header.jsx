@@ -2,6 +2,7 @@ import { styled } from '@stitches/react';
 import Offcanvas from '@/components/Offcanvas';
 import { LenisIcon } from '@/components/Icons';
 import HeaderTitle from '@/components/HeaderTitle';
+import HeaderSidebar from '@/components/HeaderSidebar';
 
 const Content = styled('header', {
   width: '100%',
@@ -19,8 +20,8 @@ const Container = styled('div', {
 
   gridTemplateAreas: `
 		"brand brand . . ."
-		"social-media header-paragraph header-paragraph header-paragraph infinite-slide"
-		"social-media header-paragraph header-paragraph header-paragraph infinite-slide"
+		"social-media header-paragraph header-paragraph header-paragraph header-sidebar"
+		"social-media header-paragraph header-paragraph header-paragraph header-sidebar"
 		"svg-animate threejs threejs threejs animation-btn"
 	`,
 });
@@ -37,8 +38,8 @@ const Box = styled('div', {
       HeaderParagraph: {
         gridArea: 'header-paragraph',
       },
-      InfiniteSlide: {
-        gridArea: 'infinite-slide',
+      HeaderSidebar: {
+        gridArea: 'header-sidebar',
       },
       SvgAnimate: {
         gridArea: 'svg-animate',
@@ -73,7 +74,17 @@ const Header = () => {
             <HeaderTitle />
           </Box>
 
-          <Box area='InfiniteSlide'>InfiniteSlide</Box>
+          <Box area='HeaderSidebar'>
+            <HeaderSidebar
+              strings={[
+                'These are the default values...',
+                'You know what you should do?',
+                'Use your own!',
+                'Have a great day!',
+              ]}
+            />
+          </Box>
+
           <Box area='SvgAnimate'>SvgAnimate</Box>
           <Box area='Threejs'>Threejs3D</Box>
           <Box area='AnimationBtn'>BtnAnimate</Box>
