@@ -3,6 +3,7 @@ import Offcanvas from '@/components/Offcanvas';
 import { LenisIcon } from '@/components/Icons';
 import HeaderTitle from '@/components/HeaderTitle';
 import HeaderSidebar from '@/components/HeaderSidebar';
+import SocialMedia from '@/components/SocialMedia';
 
 const Content = styled('header', {
   width: '100%',
@@ -67,7 +68,7 @@ const Header = () => {
           </Box>
 
           <Box area='SocialMedia' className=''>
-            SocialMedia:
+            <SocialMedia />
           </Box>
 
           <Box area='HeaderParagraph'>
