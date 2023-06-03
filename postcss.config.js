@@ -10,6 +10,7 @@ export default {
         'custom-selectors': { preserve: true },
       },
     },
+    'postcss-for': {},
     'postcss-simple-vars': {},
     'postcss-extend': {},
     'postcss-mixins': {},
