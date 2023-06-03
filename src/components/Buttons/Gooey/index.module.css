@@ -1,0 +1,60 @@
+$prime: var(--radix-colors-red4);
+$second: var(--radix-colors-gray12);
+
+.GooeyButton {
+  border: none;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: $second;
+  background-color: $prime;
+  filter: url('#gooey');
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.Bubbles {
+  position: absolute;
+  inset: 0;
+}
+
+.BubblesItem {
+  background-color: $prime;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+
+  @for $bubble from 1 to 10 {
+    &:nth-child($bubble) {
+      $size: 25px;
+
+      width: $size;
+      height: $size;
+      left: calc((($bubble + 50) - ($bubble * 9 / 2)) * 1px);
+      animation: move-$(bubble) calc(3s + ($bubble * 250ms)) infinite;
+      animation-delay: calc($bubble * 500ms);
+    }
+  }
+}
+
+@for $bubble from 1 to 10 {
+  @keyframes move-$(bubble) {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    99% {
+      transform: translate(0, calc((($bubble + 110) - ($bubble / 3)) * -1px));
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+  }
+}

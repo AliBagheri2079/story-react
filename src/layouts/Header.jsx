@@ -4,6 +4,7 @@ import { LenisIcon } from '@/components/Icons';
 import HeaderTitle from '@/components/HeaderTitle';
 import HeaderSidebar from '@/components/HeaderSidebar';
 import SocialMedia from '@/components/SocialMedia';
+import GooeyButton from '@/components/Buttons/Gooey';
 
 const Content = styled('header', {
   width: '100%',
@@ -88,7 +89,10 @@ const Header = () => {
 
           <Box area='SvgAnimate'>SvgAnimate</Box>
           <Box area='Threejs'>Threejs3D</Box>
-          <Box area='AnimationBtn'>BtnAnimate</Box>
+
+          <Box area='AnimationBtn'>
+            <GooeyButton>Awesome button</GooeyButton>
+          </Box>
         </Container>
       </Content>
     </>
