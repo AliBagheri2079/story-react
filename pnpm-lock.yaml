@@ -17,9 +17,15 @@ dependencies:
   '@stitches/react':
     specifier: ^1.2.8
     version: 1.2.8(react@18.2.0)
+  '@studio-freight/lenis':
+    specifier: ^1.0.14
+    version: 1.0.14
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
+  gsap:
+    specifier: ^3.11.5
+    version: 3.11.5
   prop-types:
     specifier: ^15.8.1
     version: 15.8.1
