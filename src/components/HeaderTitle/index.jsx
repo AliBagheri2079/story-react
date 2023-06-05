@@ -1,6 +1,7 @@
 import { CurveUnderline, WaveUnderline } from '../Underline';
 import { Title } from './index.stitches';
 
+//TODO: Add svg stroke animation for underlines
 const HeaderTitle = () => {
   return (
     <div className='flex h-full items-center'>
