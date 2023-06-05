@@ -2,7 +2,6 @@ import { keyframes, styled } from '@/lib/stitches.config.js';
 
 const heightIncrease = keyframes({
   from: {
-    height: 0,
     transform: 'skew(0deg, 15deg)',
   },
   to: {
@@ -23,9 +22,13 @@ const waveAnimate = keyframes({
 
 export const WaveItem = styled('div', {
   position: 'absolute',
+  height: 0,
   width: '100%',
   transformOrigin: 'right bottom',
-  animation: `${heightIncrease} 500ms var(--wave-delay, 200ms) ease-out both`,
+
+  '&.wave--animate': {
+    animation: `${heightIncrease} 500ms var(--wave-delay, 200ms) ease-out both`,
+  },
 
   '&::before, &::after': {
     content: '',
@@ -33,6 +36,9 @@ export const WaveItem = styled('div', {
     position: 'absolute',
     width: '55%',
     borderRadius: '50% 100%',
+  },
+
+  '&.wave--animate::before, &.wave--animate::after': {
     animation: `${waveAnimate} 500ms var(--wave-delay, 300ms) ease-out both`,
   },
 
