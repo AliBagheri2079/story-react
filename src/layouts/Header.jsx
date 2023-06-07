@@ -5,7 +5,8 @@ import HeaderTitle from '@/components/HeaderTitle';
 import HeaderSidebar from '@/components/HeaderSidebar';
 import SocialMedia from '@/components/SocialMedia';
 import GooeyButton from '@/components/Buttons/Gooey';
-import ThreeFiberCube from '@/components/Three/FiberCube';
+import WaveCubeThree from '@/features/three/WaveCube';
+// import ThreeFiberCube from '@/components/Three/FiberCube';
 // import ThreeCube from '@/components/Three/Cube';
 
 const Content = styled('header', {
@@ -93,7 +94,8 @@ const Header = () => {
 
           <Box area='Threejs'>
             {/* <ThreeCube /> */}
-            <ThreeFiberCube />
+            {/* <ThreeFiberCube /> */}
+            <WaveCubeThree />
           </Box>
 
           <Box area='AnimationBtn'>
