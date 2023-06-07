@@ -11,6 +11,12 @@ dependencies:
   '@radix-ui/react-icons':
     specifier: ^1.3.0
     version: 1.3.0(react@18.2.0)
+  '@react-three/drei':
+    specifier: ^9.74.6
+    version: 9.74.6(@react-three/fiber@8.13.0)(@types/three@0.152.1)(react-dom@18.2.0)(react@18.2.0)(three@0.153.0)
+  '@react-three/fiber':
+    specifier: ^8.13.0
+    version: 8.13.0(react-dom@18.2.0)(react@18.2.0)(three@0.153.0)
   '@stitches/core':
     specifier: ^1.2.8
     version: 1.2.8
@@ -20,6 +26,9 @@ dependencies:
   '@studio-freight/lenis':
     specifier: ^1.0.14
     version: 1.0.14
+  '@types/three':
+    specifier: ^0.152.1
+    version: 0.152.1
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
