@@ -5,6 +5,7 @@ import HeaderTitle from '@/components/HeaderTitle';
 import HeaderSidebar from '@/components/HeaderSidebar';
 import SocialMedia from '@/components/SocialMedia';
 import GooeyButton from '@/components/Buttons/Gooey';
+import ThreeCube from '@/components/Three/Cube';
 
 const Content = styled('header', {
   width: '100%',
@@ -88,7 +89,10 @@ const Header = () => {
           </Box>
 
           <Box area='SvgAnimate'>SvgAnimate</Box>
-          <Box area='Threejs'>Threejs3D</Box>
+
+          <Box area='Threejs'>
+            <ThreeCube />
+          </Box>
 
           <Box area='AnimationBtn'>
             <GooeyButton>Awesome button</GooeyButton>
