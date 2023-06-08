@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Line } from './index.stitches';
-import { ReactComponent as WaveIcon } from '@/assets/icons/wave.svg';
+import { ReactComponent as WaveIcon } from '@/assets/svg/wave.svg';
 
 const WaveUnderline = ({ children }) => {
   return (
