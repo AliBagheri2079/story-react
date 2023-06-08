@@ -26,6 +26,7 @@ const Svg = ({
   height = '100',
   viewBox = '',
   children,
+  ...props
 }) => (
   <svg
     id={id}
@@ -36,6 +37,7 @@ const Svg = ({
     viewBox={viewBox}
     xmlns='http://www.w3.org/2000/svg'
     xmlnsXlink='http://www.w3.org/1999/xlink'
+    {...props}
   >
     {children}
   </svg>
@@ -49,6 +51,7 @@ Svg.propTypes = {
   style: PropTypes.objectOf(PropTypes.object),
   viewBox: PropTypes.string,
   children: PropTypes.element,
+  props: PropTypes.any,
 };
 
 Svg.Child = child;
