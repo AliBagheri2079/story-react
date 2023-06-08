@@ -4,7 +4,7 @@ $second: var(--radix-colors-gray12);
 .GooeyButton {
   border: none;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: calc(0.5rem + 0.5vw);
   color: $second;
   background-color: $prime;
   filter: url('#gooey');
