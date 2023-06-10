@@ -1,9 +1,54 @@
+@import url('@/assets/fonts/index.css');
+
 @layer base {
-  h1 {
-    @apply text-2xl;
+  :root {
+    --avineo-font: 'Avineo', ui-serif, serif;
+    --monument-regular-font: 'Monument Extended Regular', system-ui,
+      -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',
+      sans-serif;
+    --monument-ultrabold-font: 'Monument Extended Ultrabold', system-ui,
+      -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',
+      sans-serif;
+    --moresby-font: 'Moresby', 'Dank Mono', 'Operator Mono', 'Inconsolata',
+      'Fira Mono', ui-monospace, 'SF Mono', 'Monaco', 'Droid Sans Mono',
+      'Source Code Pro', monospace;
+
+    background-color: theme('colors.black');
+    color: theme('colors.white');
+    font-family: var(--monument-regular-font);
+    color-scheme: dark;
   }
 
-  h2 {
-    @apply text-xl;
+  ::selection {
+    background-color: theme('colors.gray.100');
+    color: theme('colors.red.300');
+  }
+
+  html {
+    --cursor-color: #333;
+  }
+
+  html.dark-mode {
+    --cursor-color: #fff;
+  }
+
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
   }
 }

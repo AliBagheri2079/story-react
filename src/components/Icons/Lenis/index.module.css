@@ -1,0 +1,20 @@
+.LenisIconPath {
+  @apply fill-none stroke-red-200;
+
+  stroke-width: 0.1rem;
+  stroke-dasharray: 4800;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: draw-stroke 2s var(--delay, 0.4s) ease-in both;
+}
+
+@keyframes draw-stroke {
+  from {
+    fill-opacity: 0;
+    stroke-dashoffset: 4800;
+  }
+
+  to {
+    @apply fill-red-200 stroke-transparent;
+  }
+}

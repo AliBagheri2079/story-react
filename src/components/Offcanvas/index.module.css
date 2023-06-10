@@ -1,0 +1,33 @@
+.List {
+  overflow: hidden;
+
+  > li {
+    padding-block: 1rem;
+    width: 100%;
+    transition: filter 1s;
+  }
+
+  &:hover li:not(:hover) {
+    filter: blur(2px);
+  }
+
+  a {
+    position: relative;
+
+    &:hover svg {
+      transform: translate3d(-66.6%, 0, 0);
+    }
+  }
+
+  svg {
+    transition: transform 500ms 500ms;
+    transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+  }
+}

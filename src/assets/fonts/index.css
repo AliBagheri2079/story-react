@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Avineo;
+  src: url("./Avineo/Avineo-PersonalUseOnly.eot");
+  src: url("./Avineo/Avineo-PersonalUseOnly.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Avineo/Avineo-PersonalUseOnly.woff2") format("woff2"),
+    url("./Avineo/Avineo-PersonalUseOnly.woff") format("woff"),
+    url("./Avineo/Avineo-PersonalUseOnly.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended Regular";
+  src: url("./MonumentExtended/Regular/MonumentExtended-Regular.eot");
+  src: url("./MonumentExtended/Regular/MonumentExtended-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./MonumentExtended/Regular/MonumentExtended-Regular.woff2")
+      format("woff2"),
+    url("./MonumentExtended/Regular/MonumentExtended-Regular.woff")
+      format("woff"),
+    url("./MonumentExtended/Regular/MonumentExtended-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended Ultrabold";
+  src: url("./MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.eot");
+  src: url("./MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.woff2")
+      format("woff2"),
+    url("./MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.woff")
+      format("woff"),
+    url("./MonumentExtended/Ultrabold/MonumentExtended-Ultrabold.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Moresby;
+  src: url("./Moresby/Moresby-Regular.eot");
+  src: url("./Moresby/Moresby-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./Moresby/Moresby-Regular.woff2") format("woff2"),
+    url("./Moresby/Moresby-Regular.woff") format("woff"),
+    url("./Moresby/Moresby-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
