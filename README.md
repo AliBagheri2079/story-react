@@ -1,8 +1,8 @@
-# Story React.js
+# Story React
 
 This Layout made with React, Radix UI(with Icons, Colors), Stitches, PropType, React Three, Gsap with Lenis, Tailwind and Postcss.
 
-## [Demo Link](https://alibagheri2079.github.io/dashboard-reactjs/)
+## [Demo Link](https://story-react.netlify.app)
 
 <img
 src="./public/Screenshot.png"
@@ -29,12 +29,14 @@ Clone the project
   git clone https://github.com/AliBagheri2079/story-react.git
 
 
+
 ```
 
 Go to the project directory
 
 ```bash
   cd story-react
+
 
 
 ```
@@ -45,12 +47,14 @@ Install dependencies
   pnpm install
 
 
+
 ```
 
 Start the server
 
 ```bash
   pnpm run dev
+
 
 
 ```
@@ -61,12 +65,14 @@ Format the Component
   pnpm run format
 
 
+
 ```
 
 linting the Component
 
 ```bash
   pnpm run lint
+
 
 
 ```
@@ -77,6 +83,7 @@ To deploy this project run
 
 ```bash
   pnpm run deploy
+
 
 
 ```
